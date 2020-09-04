@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="/home/mike/Desktop/Coding Projects/SurveyForm/css/all.css" type="text/css">
+</head>
+
+
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"> 
+
+<h1 id="title">Music Lessons Information Form</h1>
+
+<p id="description"><i>Please provide your details and someone will contact you shortly</i></p>
+  
+<br>
+<br>
+
+<form id="survey-form">
+  <div class="form-control">
+    <label for="name" id="name-label">Name:</label><br>
+    <input type="text" id="name" name="name"                  placeholder="Full Name" required /<br>
+           </div>
+
+  <div class="form-control">
+    <label for="email" id="email-label">Email:</label><br>
+    <input type="email" id="email" name="email"                placeholder="Email address" required><br>
+  </div>
+  
+  <div class="form-control">
+    <label for="age" id="number-label">Age:</label><br>
+    <input type="number" id="number" name="age" min="6"        max="90" placeholder="Age (6-90)" required><br>
+  </div>
+
+
+<div class="form-control">
+<label for="instruments">Choose an Instrument:</label>
+
+<select name="instruments" id="dropdown">
+  <option value="piano">Piano</option>
+  <option value="violin">Violin</option>
+  <option value="saxophone">Saxophone</option>
+  <option value="singing">Singing</option>
+</select>
+ </div>
+  
+
+  
+<br>
+<br>  
+<div class="form-control">
+<label>Describe your level of experience:</label><br>
+
+  <input type="radio" id="experience-1" name="experience"                value="pro">
+  <label for="experience-1">Pro</label><br>
+  <input type="radio" id="experience-2" name="experience"              value="intermediate">
+  <label for="experience-2">Intermediate</label><br>
+  <input type="radio" id="experience-3" name="experience"              value="beginner">
+  <label for="experience-3">Beginner</label>
+</div>
+  
+
+  
+
+  <br>
+<div class="form-control">
+  <p>What area are you looking to improve:</p>
+    <input type="checkbox" id="improve1" name="improve1" value="aural">
+  <label for="improve1"> Aural skills</label><br>
+  <input type="checkbox" id="improve2" name="improve2" value="sight-reading">
+  <label for="improve2"> Sight-reading</label><br>
+  <input type="checkbox" id="improve3" name="improve3" value="improvisation">
+  <label for="improve3"> Improvisation</label>
+<br>
+  </div>
+
+<div class="form-control">  
+  
+ <label for="further-comments">Any further comments:</label>
+
+<textarea id="further-comments" name="further-comments" rows="4" cols="50">
+Please include here any additional information you feel may assist us</textarea>
+<br>
+</div>
+  <button type="submit" id="submit">Submit</button>
+  
+</form>
